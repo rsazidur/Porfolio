@@ -44,18 +44,25 @@
                     obostha, ty ekhon somoy nosto korte esob bal sal banaccci.</p>
 
                     <div class="tab-titles">
-                        <p class="tab-links active-link">Skills</p>
-                        <p class="tab-links">Experience</p>
-                        <p class="tab-links">Education</p>
+                        <p class="tab-links active-link" onclick="opentab('skills')">Skills</p>
+                        <p class="tab-links" onclick="opentab('experience')">Experience</p>
+                        <p class="tab-links" onclick="opentab('education')">Education</p>
                     </div>
-                    <div class="tab-contents">
+                    <div class="tab-contents active-tab" id="skills">
                         <ul>
                             <li><span>Problem Solving</span><br>CodeForces, LeetCode</li>
                             <li><span>Projects</span><br>New, Upgrade</li>
                             <li><span>App Development</span><br>Building iOS</li>
                         </ul>
                     </div>
-                    <div class="tab-contents">
+                    <div class="tab-contents" id="experience">
+                        <ul>
+                            <li><span>2026</span><br>Something big</li>
+                            <li><span>2025</span><br>Intern, Elon Musk's SpaceX</li>
+                            <li><span>2022</span><br>Landed here</li>
+                        </ul>
+                    </div>
+                    <div class="tab-contents" id="education">
                         <ul>
                             <li><span>2022 - 2026(Running)</span><br>Computer Science and Engineering, Brac University</li>
                             <li><span>2020</span><br>HSC, Navy School and Collage</li>
@@ -67,6 +74,21 @@
     </div>
 </div>
 
+<script>
+    var tablinks = document.getElementsByClassName("tab-links");
+    var tabcontents = document.getElementsByClassName("tab-contents");
+
+    function opentab(tabname){
+        for (tablink of tablinks){
+            tablink.classList.remove("active-link");
+        }
+
+        for (tabcontent of tabcontents){
+            tabcontent.classList.remove("active-tab")
+        }
+    }
+
+</script>
 
 
 </body>
