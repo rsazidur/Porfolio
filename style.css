@@ -215,6 +215,10 @@ nav ul li a:hover::after{
     padding: 50px 0;
 }
 
+.container .sub-title{
+    font-size: 50px;
+}
+
 .work-list{
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
@@ -298,6 +302,10 @@ nav ul li a:hover::after{
 
 /* ------------contact------------ */
 
+.contact-left h1{   
+    font-size: 50px;
+}
+
 .contact-left{
     flex-basis: 35%;
 }
@@ -307,7 +315,7 @@ nav ul li a:hover::after{
 }
 
 .contact-left p{
-    margin-top: 30px;
+    margin-top: 15px;
 }
 
 .contact-left p i{
@@ -316,8 +324,26 @@ nav ul li a:hover::after{
     font-size: 25px;
 }
 
+.github a{
+    font-size: 17.5px;
+    text-decoration: none;
+    margin-right: 15px;
+    color: #fff;
+    display: inline-block;
+}
+
+.contact-left a i{
+    text-decoration: none;
+    font-size: 31.5px;
+    margin-right: 15px;
+    margin-top: 15px;
+    color: #ababab;
+    display: inline-block;
+    transition: transform 0.5s;
+}
+
 .social-icon{
-    margin-top: 30px;
+    margin-top: 15px;
 }
 
 .social-icon a{
@@ -337,4 +363,27 @@ nav ul li a:hover::after{
 .btn.btn2{
     display: inline-block;
     background: #ff004f;
+}
+
+.contact-right form{
+    width: 100%;
+}
+
+form input, form textarea{
+    width: 100%;
+    border: 0;
+    outline: none;
+    background: #262626;
+    padding: 15px;
+    margin: 10px 0;
+    color:#fff;
+    font-size: 14px;
+    border-radius: 6px;
+}
+
+form .btn2{
+    padding: 14px 60px;
+    font-size: 18px;
+    margin-top: 15px;
+    cursor: pointer;
 }
